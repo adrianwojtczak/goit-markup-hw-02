@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <!-- metadane-->
+        <!--metadane-->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zadanie domowe dla studentów #1</title>
+        <title>Zadanie domowe dla studentów #2</title>
+
+        <!--Google fonts START-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!--google fonts END-->
+
+        <link href="./css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <!--menu-->
-            <p><span>Web</span>Studio</p>
+            <p class="logo logo-header">
+                <span class="logo-blue">Web</span>Studio
+            </p>
             <nav>
                 <!--Menu nav-->
-                <ul>
-                    <li><a href="">Agencja</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Kontakt</a></li>
+                <ul class="nav-menu-header list-no-marker">
+                    <li><a class="active" href="index.html">Agencja</a></li>
+                    <li>
+                        <a class="active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a class="active" href="">Kontakt</a></li>
                 </ul>
             </nav>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+48111111111">+48 111 111 111</a>
+            <a class="contact active" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+            >
+            <a class="contact active" href="tel:+48111111111"
+                >+48 111 111 111</a
+            >
         </header>
         <main>
-            <section>
+            <section class="bg-dark">
                 <!--nagłówek z przyciskiem-->
-                <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-                <button>Zamów usługe</button>
+                <h1 class="header-main">
+                    Efektywne rozwiązania dla waszego biznesu
+                </h1>
+                <div class="button-wrapper">
+                    <button type="button" class="button button-main">
+                        Zamów usługe
+                    </button>
+                </div>
             </section>
-            <ul>
+            <ul class="list-no-marker">
                 <!--nasze atrybuty-->
                 <li>
                     <h3>Lorem ipsum</h3>
@@ -66,12 +91,12 @@
             <section>
                 <!--czym się zajmujemy-->
                 <h2>Czym się zajmujemy</h2>
-                <ul>
+                <ul class="list-no-marker">
                     <li>
                         <figure>
                             <!--obrazek1-->
                             <img
-                                src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
+                                src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
                                 alt="Zbliżenie na programistę pracującego przy swoim biurku"
                                 height="294"
                                 width="370"
@@ -82,7 +107,7 @@
                         <figure>
                             <!--obrazek2-->
                             <img
-                                src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
+                                src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
                                 alt="Projektant interfejsu internetowego opracowuje aplikację na smartfony"
                                 height="294"
                                 width="370"
@@ -93,7 +118,7 @@
                         <figure>
                             <!--obrazek3-->
                             <img
-                                src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
+                                src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
                                 alt="Web designer pracuje z tabletem graficznym"
                                 height="294"
                                 width="370"
@@ -102,17 +127,17 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="bg-grey">
                 <!--nasz zespół-->
                 <h2>Nasz zespół</h2>
                 <div>
                     <!--karty postaci-->
-                    <ul>
+                    <ul class="list-no-marker">
                         <li>
                             <figure>
                                 <!--karta1-->
                                 <img
-                                    src="images/product-designer.jpg"
+                                    src="./images/product-designer.jpg"
                                     alt="Product Designer"
                                     height="260"
                                     width="270"
@@ -127,7 +152,7 @@
                             <figure>
                                 <!--karta2-->
                                 <img
-                                    src="images/frontend-developer.jpg"
+                                    src="./images/frontend-developer.jpg"
                                     alt="Frontend Developer"
                                     height="260"
                                     width="270"
@@ -142,7 +167,7 @@
                             <figure>
                                 <!--karta3-->
                                 <img
-                                    src="images/marketing.jpg"
+                                    src="./images/marketing.jpg"
                                     alt="Marketing"
                                     height="260"
                                     width="270"
@@ -157,7 +182,7 @@
                             <figure>
                                 <!--karta4-->
                                 <img
-                                    src="images/ui-designer.jpg"
+                                    src="./images/ui-designer.jpg"
                                     alt="UI Designer"
                                     height="260"
                                     width="270"
@@ -172,13 +197,17 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="bg-dark">
             <!--stopka-->
-            <p><span>Web</span>Studio</p>
-            <address>
-                <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-                <p>info@example.com</p>
-                <p>+48 111 111 111</p>
+            <p class="logo logo-footer">
+                <span class="logo-blue">Web</span>Studio
+            </p>
+            <address class="footer-address">
+                <p class="footer-address-main">
+                    m. Warszawa, Aleje Jerozolimskie 21
+                </p>
+                <p class="footer-address-secondary">info@example.com</p>
+                <p class="footer-address-secondary">+48 111 111 111</p>
             </address>
         </footer>
     </body>
