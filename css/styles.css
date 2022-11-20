@@ -28,6 +28,8 @@ body {
 .button {
     cursor: pointer;
     background: #f5f4fa;
+    text-align: center;
+    font-size: 16px;
 }
 
 .button:hover {
@@ -35,17 +37,14 @@ body {
     background-color: #2196f3;
 }
 
-.button-wrapper {
-    text-align: center;
+.button-main {
+    font-weight: 700;
+    line-height: 1.88;
 }
 
-.batton-main {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
+.button-portfolio {
+    font-weight: 500;
+    line-height: 1.62;
 }
 
 /* logo*/
@@ -70,18 +69,19 @@ body {
 }
 
 /*header*/
-.nav-menu-header {
+.nav-menu-header,
+.contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+}
+
+.nav-menu-header {
     color: #212121;
 }
 
 .contact {
     color: #757575;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 /*backgrouns*/
@@ -108,12 +108,61 @@ body {
 }
 
 /*Index main*/
+
+.section-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
 .header-main {
     color: #ffffff;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
+}
+
+.section-our-strengths {
+    font-size: 14px;
+}
+
+.section-our-strengths-header {
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.section-our-strengths-content {
+    color: #757575;
+    line-height: 1.71;
+}
+
+.card {
+    font-size: 16px;
+    line-height: 1.19;
+    display: inline-block;
+}
+
+.card > figcaption {
+    text-align: center;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+.card-content {
+    color: #757575;
+}
+
+/*portfolio*/
+.card-portfolio-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.card-portfolio-content {
+    font-size: 16px;
+    line-height: 1.88;
 }
