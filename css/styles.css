@@ -16,7 +16,9 @@ body {
 }
 
 .active:visited,
-.contact:visited {
+.contact:visited,
+.active,
+.contact {
     text-decoration: none;
     color: inherit;
 }
@@ -38,6 +40,7 @@ body {
 /*Buttons*/
 .button {
     cursor: pointer;
+    font-family: inherit;
     background: var(--button-color);
     text-align: center;
     font-size: 16px;
